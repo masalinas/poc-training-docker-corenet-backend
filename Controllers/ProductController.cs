@@ -31,7 +31,6 @@ public class ProductController : ControllerBase
         return product;
     }
 
-
     [HttpPost]
     public async Task<IActionResult> Post(Product product)
     {
@@ -56,7 +55,6 @@ public class ProductController : ControllerBase
 
         return NoContent();
     }
-
 
     [HttpDelete("{id:length(24)}")]
     public async Task<IActionResult> Delete(string id)

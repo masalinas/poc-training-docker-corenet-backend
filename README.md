@@ -20,3 +20,8 @@ dotnet publish -c Release
 ```sh
 dotnet run
 ```
+
+## Access swagger UI
+```sh
+http://localhost:5225/swagger/index.html
+```

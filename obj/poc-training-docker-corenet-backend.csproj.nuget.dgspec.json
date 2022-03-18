@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/miguel/temp/poc-training-docker-corenet-backend/poc-training-docker-corenet-backend.csproj": {}
+    "/home/miguel/git/poc-training-docker-dotnet-backend/poc-training-docker-corenet-backend.csproj": {}
   },
   "projects": {
-    "/home/miguel/temp/poc-training-docker-corenet-backend/poc-training-docker-corenet-backend.csproj": {
+    "/home/miguel/git/poc-training-docker-dotnet-backend/poc-training-docker-corenet-backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/miguel/temp/poc-training-docker-corenet-backend/poc-training-docker-corenet-backend.csproj",
+        "projectUniqueName": "/home/miguel/git/poc-training-docker-dotnet-backend/poc-training-docker-corenet-backend.csproj",
         "projectName": "poc-training-docker-corenet-backend",
-        "projectPath": "/home/miguel/temp/poc-training-docker-corenet-backend/poc-training-docker-corenet-backend.csproj",
+        "projectPath": "/home/miguel/git/poc-training-docker-dotnet-backend/poc-training-docker-corenet-backend.csproj",
         "packagesPath": "/home/miguel/.nuget/packages/",
-        "outputPath": "/home/miguel/temp/poc-training-docker-corenet-backend/obj/",
+        "outputPath": "/home/miguel/git/poc-training-docker-dotnet-backend/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/miguel/.nuget/NuGet/NuGet.Config"
@@ -38,6 +38,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.15.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"

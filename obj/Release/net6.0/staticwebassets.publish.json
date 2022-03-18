@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "LK9z+WJWxf/rvioHt6OWyxOOIrZsyLxrDkcviiv8FpU=",
+  "Source": "poc-training-docker-corenet-backend",
+  "BasePath": "_content/poc-training-docker-corenet-backend",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

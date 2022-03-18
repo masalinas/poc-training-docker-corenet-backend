@@ -1,5 +1,4 @@
 
-using System.Runtime.Serialization;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 
@@ -12,12 +11,16 @@ public class Product
     [BsonRepresentation(BsonType.ObjectId)]
     public string? Id { get; set; }
 
+    [BsonElement("name")]
     public string Name { get; set; } = null!;
 
+    [BsonElement("description")]
     public String Description { get; set; } = null!;
 
+    [BsonElement("price")]
     public float Price { get; set; }
 
+    [BsonElement("active")]
     public Boolean Active { get; set; }
 
 }

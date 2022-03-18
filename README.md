@@ -25,3 +25,18 @@ dotnet run
 ```sh
 http://localhost:5225/swagger/index.html
 ```
+
+# Compile image
+```sh
+docker build -t poc-docker-corenet-backend .
+```
+
+# run image
+```sh
+docker run --name poc-docker-corenet-backend -d -p 5000:80 --network training poc-docker-corenet-backend
+```
+
+# Access API from container
+```sh
+http://localhost:5000/products
+```

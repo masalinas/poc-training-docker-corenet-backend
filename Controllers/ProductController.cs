@@ -6,7 +6,7 @@ using poc_training_docker_corenet_backend.Services;
 namespace poc_training_docker_corenet_backend.Controllers;
 
 [ApiController]
-[Route("api/[controller]")]
+[Route("products")]
 public class ProductController : ControllerBase
 {
     private readonly ProductService productService;

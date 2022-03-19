@@ -18,6 +18,7 @@ public class Product
     public String Description { get; set; } = null!;
 
     [BsonElement("price")]
+    [BsonRepresentation(BsonType.Double, AllowTruncation = true)]
     public float Price { get; set; }
 
     [BsonElement("active")]

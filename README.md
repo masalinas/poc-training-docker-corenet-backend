@@ -16,12 +16,17 @@ dotnet add package MongoDB.Driver --version 2.15.0
 dotnet publish -c Release
 ```
 
-## Execute service
+## Start service from host
 ```sh
 dotnet run
 ```
 
-## Access swagger UI
+Access API service
+```sh
+http://localhost:5225/api/products
+```
+
+Access swagger ui service
 ```sh
 http://localhost:5225/swagger/index.html
 ```
@@ -31,12 +36,13 @@ http://localhost:5225/swagger/index.html
 docker build -t poc-docker-corenet-backend .
 ```
 
-## run image
+## Start container from docker
+Start container from docker environment
 ```sh
-docker run --name poc-docker-corenet-backend -d -p 5000:80 --network training poc-docker-corenet-backend
+docker run --name poc-docker-corenet-backend -d -e "ASPNETCORE_ENVIRONMENT=Docker" -p 5000:80 --network training poc-docker-corenet-backend
 ```
 
-## Access API from container
+Access API service
 ```sh
-http://localhost:5000/products
+http://localhost:5000/api/products
 ```

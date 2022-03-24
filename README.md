@@ -11,6 +11,11 @@ dotnet add package Microsoft.EntityFrameworkCore --version 6.0.1
 dotnet add package MongoDB.Driver --version 2.15.0
 ```
 
+## Restore dependencies
+```sh
+dotnet restore
+```
+
 ## Compile service
 ```sh
 dotnet publish -c Release
